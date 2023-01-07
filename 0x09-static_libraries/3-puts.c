@@ -1,24 +1,19 @@
-#include "main.h" 
+#include <stdio.h>
+#include <string.h>
 
 /**
- * _puts - print a string
- *
- * @str: string pointer
- *
- * Return: nothing
+*main - Main function of my project
+*
+*
+*Return: return 0 everytime
 */
-
-void _puts(char *str)
+int main(void)
 {
-	int i;
 
-	for (i = 0; str[i] >= 0; i++)
-	{
-		if (str[i] == '\0')
-		{
-			_putchar('\n');
-			break;
-		}
-		_putchar(str[i]);
-	}
+        char displayed[52];
+
+        strcpy(displayed, "\"Programming is like building a multilingual puzzle");
+        puts(displayed);
+        return (0);
 }
+
